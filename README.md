@@ -1,4 +1,4 @@
-This is a [TodoAPI](https://nextjs.org/) project bootstrapped with [`expess.js`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a TodoAPI [like this](https://todo-app001.fly.dev/api/todos) project bootstrapped with [`expess.js`](https://expressjs.com/pt-br/).
 
 ## Getting Started
 
