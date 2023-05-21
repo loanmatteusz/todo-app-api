@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  mongo:
+    container_name: todo_db_container
+    image: tutum/mongodb
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      AUTH: "false"
+
+  app:
+    container_name: todoapp
+    build: .
+    ports:
+      - 3003:3003
+    depends_on:
+      - mongo

@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "src/loader.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon",
+    "prod": "pm2 start src/loader.js --name todo-app",
+    "build": "rm -rf ./dist && babel ./src --extensions \".js,.ts\" --out-dir ./dist --copy-files --no-copy-ignored"
+  },
+  "dependencies": {
+    "body-parser": "1.15.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "4.14.0",
+    "mongoose": "6.11.1",
+    "node-restful": "0.2.5",
+    "pm2": "^5.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/node": "^7.20.7",
+    "nodemon": "1.11.0"
+  }
+}
